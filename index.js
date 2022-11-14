@@ -324,7 +324,11 @@ MochaJUnitReporter.prototype.getTestcaseData = function(test, err) {
   var jenkinsMode = this._options.jenkinsMode;
   var flipClassAndName = this._options.testCaseSwitchClassnameAndName;
   var name = stripAnsi(jenkinsMode ? getJenkinsClassname(test, this._options) : test.fullTitle());
-  var classname = stripAnsi(test.title);
+
+  console.log(test);
+  console.log(Object.getOwnPropertyNames(test));
+
+  var classname = test.file; // stripAnsi(test.title);
   var testcase = {
     testcase: [{
       _attr: {
