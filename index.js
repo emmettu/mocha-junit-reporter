@@ -327,6 +327,12 @@ MochaJUnitReporter.prototype.getTestcaseData = function(test, err) {
 
   console.log(test);
   console.log(Object.getOwnPropertyNames(test));
+  console.log(test.invocationDetails());
+  console.log(test.invocationDetails);
+  console.log(test.invocationDetails().relativeFile());
+  console.log(test.invocationDetails.relativeFile());
+  console.log(test.invocationDetails().relativeFile);
+  console.log(test.invocationDetails().relativeFile());
 
   var classname = test.invocationDetails.relativeFile;
   var testcase = {
