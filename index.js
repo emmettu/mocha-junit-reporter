@@ -337,6 +337,8 @@ MochaJUnitReporter.prototype.getTestcaseData = function(test, err) {
     }]
   };
 
+  testcase.file = filePath;
+
   // We need to merge console.logs and attachments into one <system-out> -
   //  see JUnit schema (only accepts 1 <system-out> per test).
   var systemOutLines = [];
