@@ -119,6 +119,11 @@ Permission to waive conditions of this license may be requested from Windy Road 
 							<xs:documentation xml:lang="en">Name of the test method</xs:documentation>
 						</xs:annotation>
 					</xs:attribute>
+					<xs:attribute name="file" type="xs:token" use="required">
+						<xs:annotation>
+							<xs:documentation xml:lang="en">Path of the file the test method is in</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
 					<xs:attribute name="classname" type="xs:token" use="required">
 						<xs:annotation>
 							<xs:documentation xml:lang="en">Full class name for the class the test method is in.</xs:documentation>
